@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Active Online Software Page</title>
+    <meta property="og:title" content="Active Online Software Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+      
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;
+       }
+
+
+    
+  /* ... your existing styles ... */
+
+  /* Define the fade-in animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply the fade-in animation to elements with the .fade-in class */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1s ease-in-out forwards;
+  }
+
+
+
+  /* ... your existing styles ... */
+
+  /* Define the slide-up animation */
+  @keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Define the scale-in animation */
+  @keyframes scale-in {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Apply the animations to specific elements */
+
+  .slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slide-up 1s ease-in-out forwards;
+  }
+
+  .scale-in {
+    transform: scale(0.8);
+    opacity: 0;
+    animation: scale-in 1s ease-in-out forwards;
+  }
+
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <div class="home-menu fade-in">
+            <div id="mobile-menu" class="home-mobile-navigation">
+              <!-- <img
+                alt="pastedImage"
+                src="public/external/black%20%26%20blue%20monoline%20technology%20logo%20(1)-200h.png"
+                class="home-logo"
+              /> -->
+              <div class="home-links fade-in">
+                <span class="Link">About</span>
+                <span class="Link">Contact</span>
+                <!-- <span class="Link">Prices</span> -->
+              </div>
+              <div id="close-mobile-menu" class="home-close-mobile-menu fade-in">
+                <svg viewBox="0 0 804.5714285714286 1024" class="home-icon fade-in">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="home-desktop-navigation">
+              <nav class="home-centered fade-in">
+                <a class="home-navlink fade-in">
+                  <img
+                    alt="image"
+                    src="public/external/black%20%26%20blue%20monoline%20technology%20logo%20(1)-200h.png"
+                    class="home-image"
+                  />
+                </a>
+                <div class="home-left fade-in">
+                  <div class="home-links1">
+                    <span class="home-text03 Link">About</span>
+                    <span class="home-text04 Link">Contact</span>
+                    <!-- <span class="home-text05 Link">Prices</span> -->
+                  </div>
+                </div>
+                <div class="home-right">
+                  <span class="home-sign-in Link">Sign in</span>
+                  <a href="get-start.html"> <div class="home-get-started">
+                    <span class="home-text06">Get started</span>
+                  </div></a>
+                  <div id="open-mobile-menu" class="home-burger-menu">
+                    <img
+                      alt="pastedImage"
+                      src="public/pastedimage-yxbd.svg"
+                      class="home-mobile-menu-button"
+                    />
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div>
+              <dangerous-html
+                html="<script>
+/*
+Mobile menu - Code Embed
+*/
+
+// Mobile menu
+const mobileMenu = document.querySelector('#mobile-menu')
+
+// Buttons
+const closeButton = document.querySelector('#close-mobile-menu')
+const openButton = document.querySelector('#open-mobile-menu')
+
+// On openButton click, set the mobileMenu position left to -100vw
+openButton.addEventListener('click', function() {
+    mobileMenu.style.transform = 'translateX(0%)'
+})
+
+// On closeButton click, set the mobileMenu position to 0vw
+closeButton.addEventListener('click', function() {
+    mobileMenu.style.transform = 'translateX(100%)'
+})
+</script>"
+              ></dangerous-html>
+            </div>
+          </div>
+          <header class="home-header">
+            <h1 class="home-text07 scale-in">
+              Take your skills to the next level with API's
+            </h1>
+            <p class="home-text08">
+              <span class="home-text09 fade-in">
+                Exclusive offer: Free testing APIs for E-commerce projects, made
+                specifically for students.
+              </span>
+              <br class="home-text10" />
+              <br class="home-text11" />
+              <br class="home-text12" />
+              <br class="home-text13" />
+            </p>
+            <a href="get-start.html"> <div class="home-get-started1">
+              <span class="home-text14">Get started</span>
+            </div></a>
+
+          </header>
+          <div class="home-dashboard-preview">
+            <div class="home-outline">
+              <img
+                alt="pastedImage"
+                src="public/pastedimage-cdo-1000h.png"
+                loading="lazy"
+                class="home-image1"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="home-features fade-in"></section>
+        <div class="home-banner-manage">
+          <div class="home-container1">
+            <div class="home-left1">
+              <span class="sub-title fade-in">Auth Management</span>
+              <span class="home-text16 title fade-in">
+                Manage all your platforms in just one place.
+              </span>
+              <span class="home-text17 fade-in">
+                Simplify your integration process by connecting all your
+                platforms, including your website, Android, iOS, and Flutter
+                projects, with just one API.
+              </span>
+              <a href="get-start.html"> <div class="home-get-started2 template-button slide-up">
+                <span class="home-text18">Get started</span>
+              </div></a>
+            </div>
+            <div class="home-image-container fade-in">
+              <img
+                alt="pastedImage"
+                src="public/pastedimage-wvmq%201-1200w.png"
+                class="home-cards-image"
+              />
+            </div>
+          </div>
+        </div>
+        <section class="home-quote-container fade-in">
+          <div class="home-quote">
+            <span class="home-message fade-in">
+              “Discover the power of our 'free testing API' service to unlock
+              the potential of technology. Test code, foster innovation, and
+              create a future without limits.”
+            </span>
+            <div class="home-author fade-in">
+              <img
+                alt="image"
+                src="public/external/rajababu-200w.png"
+                class="home-image2"
+              />
+              <span class="home-quote1">
+                <span class="home-text19">—&nbsp; Raja Babu</span>
+                <span>, Software Developer</span>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="home-statistics fade-in">
+          <div class="home-container2">
+            <div class="active-users-active-users metrics fade-in">
+              <span class="active-users-text fade-in"><span>3.5K</span></span>
+              <span class="active-users-text1 fade-in">
+                <span>— Active users</span>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="home-integrations">
+          <div class="home-centered-container">
+            <div class="home-heading">
+              <span class="sub-title fade-in">Integrations</span>
+              <span class="title fade-in">
+                Integrated with the tools you know and love
+              </span>
+            </div>
+            <div class="home-pills-container">
+              <div class="home-pills">
+                <div class="home-container3">
+                  <div class="myntra-you-tube myntra-root-class-name fade-in">
+                    <img
+                      alt="image"
+                      src="public/external/myntra-logo-200h.png"
+                      class="myntra-image"
+                    />
+                  </div>
+                  <div class="amazon-you-tube fade-in">
+                    <img
+                      alt="image"
+                      src="public/external/amazon-200h.jpeg"
+                      class="amazon-image"
+                    />
+                  </div>
+                  <div class="flipkard-you-tube flipkard-root-class-name fade-in">
+                    <img
+                      alt="image"
+                      src="public/external/flipkart-logo-transparent-vector-3-200h.png"
+                      class="flipkard-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-testimonals">
+          <div class="home-heading1">
+            <span class="sub-title fade-in">Testimonals</span>
+            <span class="title fade-in">
+              <span>What Student say about</span>
+              <br />
+              <span>Free API Testing</span>
+            </span>
+          </div>
+          <div class="home-right1">
+            <div class="home-column">
+              <div class="testimonal1-testimonal testimonal fade-in">
+                <span class="testimonal1-text fade-in">
+                  <span>
+                    "I found these APIs to be incredibly useful in successfully developing my Flutter application for last year's projects.”
+                  </span>
+                </span>
+                <div class="testimonal1-author">
+                  <div class="testimonal1-avatar fade-in">
+                    <img
+                      alt="image"
+                      src="public/external/image552912-e3yq-200h-200h.png"
+                      class="testimonal1-image"
+                    />
+                  </div>
+                  <div class="testimonal1-user">
+                    <span class="testimonal1-name fade-in">
+                      <span>Andy Smith</span>
+                    </span>
+                    <span class="testimonal1-divider">—</span>
+                    <span class="testimonal1-from fade-in">
+                      <span>Vista Social</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonal1-testimonal testimonal fade-in">
+                <span class="testimonal1-text fade-in">
+                  <span>
+                    “Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo.  Inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.”
+                  </span>
+                </span>
+                <div class="testimonal1-author">
+                  <div class="testimonal1-avatar fade-in">
+                    <img
+                      alt="image"
+                      src="public/external/image312912-mvsg-200h-200h.png"
+                      class="testimonal1-image"
+                    />
+                  </div>
+                  <div class="testimonal1-user">
+                    <span class="testimonal1-name fade-in">
+                      <span>Jessica Smith</span>
+                    </span>
+                    <span class="testimonal1-divider">—</span>
+                    <span class="testimonal1-from fade-in">
+                      <span>Social Club</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-column1">
+              <div class="testimonal1-testimonal testimonal fade-in">
+                <span class="testimonal1-text fade-in">
+                  <span>
+                    "Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+                  </span>
+                </span>
+                <div class="testimonal1-author">
+                  <div class="testimonal1-avatar fade-in">
+                    <img
+                      alt="image"
+                      src="public/external/image572912-0d3-200h-200h.png"
+                      class="testimonal1-image"
+                    />
+                  </div>
+                  <div class="testimonal1-user">
+                    <span class="testimonal1-name fade-in">
+                      <span>William McPau</span>
+                    </span>
+                    <span class="testimonal1-divider">—</span>
+                    <span class="testimonal1-from fade-in"><span>Handsly</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonal1-testimonal testimonal fade-in">
+                <span class="testimonal1-text fade-in">
+                  <span>
+                    “These APIs greatly aided in the development of my semester projects.”
+                  </span>
+                </span>
+                <div class="testimonal1-author">
+                  <div class="testimonal1-avatar fade-in">
+                    <img
+                      alt="image"
+                      src="public/external/image632913-swij-200h-200h.png"
+                      class="testimonal1-image"
+                    />
+                  </div>
+                  <div class="testimonal1-user">
+                    <span class="testimonal1-name fade-in">
+                      <span>Mariah Mae</span>
+                    </span>
+                    <span class="testimonal1-divider">—</span>
+                    <span class="testimonal1-from fade-in"><span>Share</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="home-footer fade-in">
+          <div class="home-top">
+            <div class="home-left2">
+              <span class="home-text28">Subscribe to our Free API Testing</span>
+              <div class="home-subscription">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="home-textinput input"
+                />
+                <div class="home-subscribe fade-in">
+                  <span class="home-text29">Subscribe</span>
+                </div>
+              </div>
+              <!-- <span class="home-text30">
+                By subscribing to our&nbsp; you agree with our Terms and
+                Conditions.
+              </span> -->
+              <div class="home-contact">
+                <span class="home-text31">Contact</span>
+                <a
+                  href="mailto:use@active-app.com?subject=Support"
+                  class="home-link"
+                >
+                  use@active-app.com
+                </a>
+              </div>
+            </div>
+            <div class="home-right2">
+              <div class="home-category">
+                <span class="home-text32">Company</span>
+                <div class="home-links2">
+                  <span class="home-text33">About</span>
+                  <span class="home-text34">Team</span>
+                  <span class="home-text35">News</span>
+                  <span class="home-text36">Partners</span>
+                  <span class="home-text37">Careers</span>
+                  <span class="home-text38">Press &amp; Media</span>
+                </div>
+              </div>
+              <div class="home-category1">
+                <span class="home-text39">Solutions</span>
+                <div class="home-links3">
+                  <span class="home-text40">Twitter</span>
+                  <span class="home-text41">Linkedin</span>
+                  <span class="home-text42">Crunchbase</span>
+                  <span class="home-text43">Instagram</span>
+                  <span class="home-text44">Facebook</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-bottom">
+            <span class="home-text45">Copyright © Free API Testing - 2023</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2, // Adjust this value based on when you want the animation to start
+      };
+    
+      const sectionsToAnimate = document.querySelectorAll('.fade-in');
+    
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+    
+      sectionsToAnimate.forEach(section => {
+        observer.observe(section);
+      });
+
+
+
+  // const observerOptions = {
+  //   root: null,
+  //   rootMargin: '0px',
+  //   threshold: 0.2,
+  // };
+
+  const sectionsToAnimateSlide = document.querySelectorAll('.slide-up, .scale-in');
+
+  const observerSlide = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slide-up', 'scale-in');
+        observerSlide.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  sectionsToAnimate.forEach(section => {
+    observerSlide.observe(section);
+  });
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.flipkard-you-tube {
+  width: 240px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border-radius: 200px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-gray-white);
+}
+.flipkard-image {
+  width: 109px;
+  height: 100px;
+  object-fit: cover;
+}
+
+@media(max-width: 479px) {
+  .flipkard-you-tube {
+    width: 120px;
+    height: 60px;
+    align-items: center;
+  }
+}
