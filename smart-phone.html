@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copy Code Box Example</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<style>
+  .copy-code-box {
+    position: relative;
+    border: 1px solid #d1d1d1;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .copy-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="copy-code-box">
+    <pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello, World!&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <button class="copy-button">Copy</button>
+  </div>
+</div>
+<script>
+  const copyButtons = document.querySelectorAll('.copy-button');
+
+  copyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const codeElement = button.previousElementSibling.querySelector('code');
+      const text = codeElement.innerText;
+
+      const tempTextarea = document.createElement('textarea');
+      tempTextarea.value = text;
+      document.body.appendChild(tempTextarea);
+      tempTextarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempTextarea);
+
+      button.textContent = 'Copied!';
+      setTimeout(() => {
+        button.textContent = 'Copy';
+      }, 2000);
+    });
+  });
+</script>
+</body>
+</html>
