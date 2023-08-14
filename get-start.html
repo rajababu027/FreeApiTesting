@@ -1,61 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>GetStart - Active Online Software Page</title>
-    <meta
-      property="og:title"
-      content="GetStart - Active Online Software Page"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Start</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+  <style>
+    body {
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <style>
-       body::-webkit-scrollbar {
-         width: 0.5em;
-         z-index: 100;
-         background-color:transparent;
-       }
+      background-color: #F0DCFC;
+      /* background-color: bisque; */
+    }
 
 
-      body::-webkit-scrollbar-thumb {
-         background-color:white;
-         box-shadow:0 -100vh 0 100vh #5128f5;//magic
-       }
-    </style>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="./get-start.css" rel="stylesheet" />
+    .smartphone-image {
+      max-width: 100px;
+      max-height: 50px;
+    }
 
-      <div class="get-start-container"></div>
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+      background-color: #28045c;
+    }
+
+    .nav-link.active {
+      color: #ffffff !important;
+      width: 160px;
+
+    }
+
+    .nav-link {
+      color: #28045c !important;
+      font-weight: bold;
+    }
+
+    .container.my-5 {
+      /* border: 2px solid #000; */
+      padding: 20px;
+      /* Add some padding for spacing */
+    }
+
+
+    .copy-link {
+      --height: 36px;
+
+      display: flex;
+      max-width: 250px;
+    }
+
+    .copy-link-input {
+      flex-grow: 1;
+      padding: 0 8px;
+      font-size: 14px;
+      border: 1px solid #cccccc;
+      border-right: none;
+      outline: none;
+    }
+
+    .copy-link-input:hover {
+      background: #eeeeee;
+    }
+
+    .copy-link-button {
+      flex-shrink: 0;
+      width: var(--height);
+      height: var(--height);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #dddddd;
+      color: #333333;
+      outline: none;
+      border: 1px solid #cccccc;
+      cursor: pointer;
+      
+    }
+
+    .copy-link-button:hover {
+      background: #cccccc;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light px-5" style="background-color: #28045C; height: 70px;">
+    <a href="index.html" class="navbar-brand text-light"><img alt="image"
+        src="public/external/black%20%26%20blue%20monoline%20technology%20logo%20(1)-200h.png"
+        class="smartphone-image" /></a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+  </nav>
+
+  <div class="container my-5">
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-smartphone-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-smartphone" type="button" role="tab" aria-controls="v-pills-smartphone"
+          aria-selected="true">Smart Phone</button>
+        <button class="nav-link" id="v-pills-laptop-tab" data-bs-toggle="pill" data-bs-target="#v-pills-laptop"
+          type="button" role="tab" aria-controls="v-pills-laptop" aria-selected="false">Laptop</button>
+        <button class="nav-link" id="v-pills-smartwatch-tab" data-bs-toggle="pill" data-bs-target="#v-pills-smartwatch"
+          type="button" role="tab" aria-controls="v-pills-smartwatch" aria-selected="false">Smartwatch</button>
+        <button class="nav-link" id="v-pills-tshirt-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tshirt"
+          type="button" role="tab" aria-controls="v-pills-tshirt" aria-selected="false">T-Shirt</button>
+
+        <button class="nav-link" id="v-pills-jeans-tab" data-bs-toggle="pill" data-bs-target="#v-pills-jeans"
+          type="button" role="tab" aria-controls="v-pills-jeans" aria-selected="true">Jeans</button>
+        <button class="nav-link" id="v-pills-dress-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dress"
+          type="button" role="tab" aria-controls="v-pills-dress" aria-selected="false">Dress</button>
+        <button class="nav-link" id="v-pills-perfume-tab" data-bs-toggle="pill" data-bs-target="#v-pills-perfume"
+          type="button" role="tab" aria-controls="v-pills-perfume" aria-selected="false">Perfume</button>
+        <button class="nav-link" id="v-pills-badsheets-tab" data-bs-toggle="pill" data-bs-target="#v-pills-badsheets"
+          type="button" role="tab" aria-controls="v-pills-badsheets" aria-selected="false">Bed Sheets</button>
+      </div>
+
+
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-smartphone" role="tabpanel"
+          aria-labelledby="v-pills-smartphone-tab">
+          <div id="copyDiv" style="padding: 10px; background-color: #000000;">
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-laptop" role="tabpanel" aria-labelledby="v-pills-laptop-tab">Laptop</div>
+        <div class="tab-pane fade" id="v-pills-smartwatch" role="tabpanel" aria-labelledby="v-pills-smartwatch-tab">
+          Smart Watch
+        </div>
+        <div class="tab-pane fade" id="v-pills-tshirt" role="tabpanel" aria-labelledby="v-pills-tshirt-tab">T-shirt
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-jeans" role="tabpanel" aria-labelledby="v-pills-jeans-tab">Jeans</div>
+        <div class="tab-pane fade" id="v-pills-dress" role="tabpanel" aria-labelledby="v-pills-dress-tab">Dress</div>
+        <div class="tab-pane fade" id="v-pills-perfume" role="tabpanel" aria-labelledby="v-pills-perfume-tab">Perfume
+        </div>
+        <div class="tab-pane fade" id="v-pills-badsheets" role="tabpanel" aria-labelledby="v-pills-badsheets-tab">Bad
+          Sheets
+        </div>
+
+      </div>
     </div>
-  </body>
+  </div>
+  <div id="copyDiv" class="" style="padding: 10px; background-color: #000000;">
+    Raja Babu
+  </div>
+  <button id="copyButton">Copy Text</button>
+
+  <div class="copy-link">
+    <input type="text" class="copy-link-input" value="https://www.youtube.com/" readonly>
+    <button type="button" class="copy-link-button">
+      <span class="material-icons">
+        content_copy
+        </span>
+    </button>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // const copyButton = document.getElementById('copyButton');
+    // const copyDiv = document.getElementById('copyDiv');
+
+    // copyButton.addEventListener('click', () => {
+    //   const textToCopy = copyDiv.innerText;
+
+    //   const tempTextarea = document.createElement('textarea');
+    //   tempTextarea.value = textToCopy;
+    //   document.body.appendChild(tempTextarea);
+    //   tempTextarea.select();
+    //   document.execCommand('copy');
+    //   document.body.removeChild(tempTextarea);
+
+    //   copyButton.innerText = 'Copied!';
+    //   setTimeout(() => {
+    //     copyButton.innerText = 'Copy Text';
+    //   }, 2000);
+    // });
+
+
+    document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+      const inputField = copyLinkParent.querySelector(".copy-link-input");
+      const copyButton = copyLinkParent.querySelector(".copy-link-button");
+      const text = inputField.value;
+
+      inputField.addEventListener("focus", () => inputField.select());
+
+      copyButton.addEventListener("click", () => {
+        inputField.select();
+        navigator.clipboard.writeText(text);
+
+        inputField.value = "Copied!";
+        setTimeout(() => (inputField.value = text), 2000);
+      });
+    });
+
+  </script>
+
+
+</body>
+
 </html>
